@@ -1,0 +1,45 @@
+@@include('header.html')
+
+@@include('top-large.html')
+
+<!-- main -->
+<table width="600" cellpadding="30" cellspacing="0" border="0" align="center">
+  <!-- big top -->
+  <tr>
+    <td bgcolor="#FFFFFF" width="100%" align="center">
+      <div class="topimg">
+        <img src="gfx/topimg1.png" width="301" height="302" alt="It's Wonderful">
+      </div>
+      <h1>Lovely to meet you!</h1>
+      <p>So many pretty things you have! Let's make sure you never loose anything again, ever. If you haven't done so already, download and install Degoo on your computer now.</p>
+
+      {{ $first_name|fallback:"You" }}
+
+      <a href="" class="btn" target="_blank">Download Degoo</a>
+    </td>
+  </tr>
+
+  <!-- brief pane -->
+  <tr>
+    <td bgcolor="#FFFFFF" width="100%" align="center">
+      <div class="check">
+        <img src="gfx/check.png" width="50" height="50" alt="Check mark">
+      </div>
+      <h2>Invite a friend - get more gigs</h2>
+      <p>On top of the 100 GB of free backup space you already have, you can earn an <b>additional 500 GB</b> space by helping your friends get free backup with Degoo.</p>
+      <p><a href="" target="_blank">Invite a Friend</a></p>
+    </td>
+  </tr>
+
+  <tr>
+    <td bgcolor="#FFFFFF" width="100%" align="center">
+      <div class="check">
+        <img src="gfx/check.png" width="50" height="50" alt="Check mark">
+      </div>      <h2>Getting started 1-2-3</h2>
+      <p>If you have any troubles getting started, you can get plenty of help at our support pages.</p>
+      <p><a href="" target="_blank">Getting started</a></p>
+    </td>
+  </tr>
+</table>
+
+@@include('footer.html')
