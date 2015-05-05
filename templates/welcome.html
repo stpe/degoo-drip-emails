@@ -15,7 +15,7 @@
 
       {{ $first_name|fallback:"You" }}
 
-      <a href="" class="btn" target="_blank">Download Degoo</a>
+      @@include('downloadbutton.html', {"utm_campaign": "welcome"})
     </td>
   </tr>
 
