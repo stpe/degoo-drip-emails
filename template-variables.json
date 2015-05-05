@@ -1,5 +1,5 @@
 {
-    "unsubscribe": "<a href=\"\">Unsubscribe</a>",
-    "$first_name": "Stefan"
+    "supportlink": "http://support.degoo.com/",
+    "learnmorelink": "https://degoo.com/about",
     "downloadlink": "https://degoo.com/download"
 }

@@ -6,14 +6,14 @@
 <table width="600" cellpadding="30" cellspacing="0" border="0" align="center">
   <!-- big top -->
   <tr>
-    <td bgcolor="#FFFFFF" width="100%" align="center">
+    <td bgcolor="#FFFFFF" width="600" align="center" class="mainmsg">
       <div class="topimg">
         <img src="gfx/topimg1.png" width="301" height="302" alt="It's Wonderful">
       </div>
       <h1>Lovely to meet you!</h1>
       <p>So many pretty things you have! Let's make sure you never loose anything again, ever. If you haven't done so already, download and install Degoo on your computer now.</p>
 
-      {{ $first_name|fallback:"You" }}
+      @@include('quota-bar.html')
 
       @@include('downloadbutton.html', {"utm_campaign": "welcome"})
     </td>
@@ -21,7 +21,7 @@
 
   <!-- brief pane -->
   <tr>
-    <td bgcolor="#FFFFFF" width="100%" align="center">
+    <td bgcolor="#FFFFFF" width="600" align="center">
       <div class="check">
         <img src="gfx/check.png" width="50" height="50" alt="Check mark">
       </div>
@@ -32,10 +32,11 @@
   </tr>
 
   <tr>
-    <td bgcolor="#FFFFFF" width="100%" align="center">
+    <td bgcolor="#FFFFFF" width="600" align="center">
       <div class="check">
         <img src="gfx/check.png" width="50" height="50" alt="Check mark">
-      </div>      <h2>Getting started 1-2-3</h2>
+      </div>
+      <h2>Getting started 1-2-3</h2>
       <p>If you have any troubles getting started, you can get plenty of help at our support pages.</p>
       <p><a href="" target="_blank">Getting started</a></p>
     </td>
