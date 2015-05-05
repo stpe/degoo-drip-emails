@@ -72,7 +72,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-aws-s3');
   grunt.loadNpmTasks('grunt-include-replace');
 
-  grunt.registerTask('default', ['premailer', 'includereplace']);
+  grunt.registerTask('default', ['includereplace', 'premailer']);
   grunt.registerTask('upload', ['aws_s3']);
 };
 
