@@ -1,5 +1,8 @@
 {
-    "supportlink": "http://support.degoo.com/",
-    "learnmorelink": "https://degoo.com/about",
-    "downloadlink": "https://degoo.com/download"
+    "support": "http://support.degoo.com/",
+    "learnmore": "https://degoo.com/about",
+    "download": "https://degoo.com/download",
+    "invite": "https://degoo.com/me/invite",
+    "helpbackup": "http://support.degoo.com/customer/portal/articles/1326476-how-to-backup-files",
+    "helpinstall": "http://support.degoo.com/customer/portal/articles/1326436-how-to-download-and-install-degoo"
 }
