@@ -5,15 +5,16 @@
 <!-- main -->
 <table width="600" cellpadding="30" cellspacing="0" border="0" align="center">
   <!-- big top -->
+
   <tr>
-    <td bgcolor="#FFFFFF" width="600" align="center" class="mainmsg">
-      <h1>Install Degoo to get started!</h1>
+    <td bgcolor="#FFFFFF" width="600" align="left" class="mainmsg">
+      @@include('headline.html', {"title": "Your data is almost safe"})
 
-      <p>Congratulations, you are just about to have your files backed up safely using Degoo. Simply download and install the application and you're done.</p>
+      <p>Congratulations, you just need to install Degoo! Then add what folders to backup and we'll start securing your data immediately. Simply download and install the application.</p>
 
-      @@include('downloadbutton.html', {"utm_campaign": "welcome-not_installed"})
+      @@include('downloadbutton.html', {"title": "Download Degoo", "utm_campaign": "welcome-not_installed"})
 
-      <p><a href="@@helpinstall" target="_blank">Get help installing</a></p>
+      <p>It is really simple, so just go ahead! But in case it is needed we've put together <a href="@@helpinstall" target="_blank">detailed instructions</a> of how to go about it.</p>
     </td>
   </tr>
 

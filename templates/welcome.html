@@ -6,28 +6,29 @@
 <table width="600" cellpadding="30" cellspacing="0" border="0" align="center">
   <!-- big top -->
   <tr>
-    <td bgcolor="#FFFFFF" width="600" align="center" class="mainmsg">
-      <div class="topimg">
-        <img src="gfx/topimg1.png" width="301" height="302" alt="It's Wonderful">
-      </div>
-      <h1>Congratulations and welcome!</h1>
+    <td bgcolor="#FFFFFF" width="600" align="left" class="mainmsg">
+      @@include('img-top.html', {"img": "topimg1.png", "alt": "It's Wonderful"})
+
+      @@include('headline.html', {"title": "Congratulations and welcome!"})
+
       <p>As the newest user of Degoo you will enjoy having your files safely backed up.</p>
 
       @@include('status.html')
 
-      @@include('downloadbutton.html', {"utm_campaign": "welcome"})
+      @@include('downloadbutton.html', {"title": "Download Degoo", "utm_campaign": "welcome"})
     </td>
   </tr>
 
   <!-- brief pane -->
   <tr>
-    <td bgcolor="#FFFFFF" width="600" align="center">
-      <div class="check">
-        <img src="gfx/check.png" width="50" height="50" alt="Check mark">
-      </div>
-      <h2>Invite a friend - get more gigs</h2>
+    <td bgcolor="#FFFFFF" width="600" align="left">
+      @@include('img-check.html')
+
+      @@include('subheadline.html', {"title": "Invite a friend - get more gigs"})
+
       <p>On top of the {{ ${QuotaSizeFormatted} }} of backup space you already have, you can earn an <b>additional 500 GB</b> space by helping your friends get free backup with Degoo. Not only do you get 2 GB extra space when your friend starts using Degoo - <b>your friend gets the extra space too</b>!</p>
-      <p><a href="@@invite" target="_blank">Invite a friend now</a></p>
+
+      @@include('link-center.html', {"title": "Invite a friend now", "url": "@@invite"})
     </td>
   </tr>
 

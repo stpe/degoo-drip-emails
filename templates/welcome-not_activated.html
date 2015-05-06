@@ -6,8 +6,8 @@
 <table width="600" cellpadding="30" cellspacing="0" border="0" align="center">
   <!-- big top -->
   <tr>
-    <td bgcolor="#FFFFFF" width="600" align="center" class="mainmsg">
-      <h1>Perform your first backup!</h1>
+    <td bgcolor="#FFFFFF" width="600" align="left" class="mainmsg">
+      @@include('headline.html', {"title": "Perform your first backup!"})
 
       <p>Congratulations, Degoo is ready to ensure your files stay safe no matter what happens to your computer. You can do it in seconds!</p>
 
@@ -17,11 +17,11 @@
         <li>Done!</li>
       </ul>
 
+      <p>Now Degoo will encrypt and upload your data to securely store it. If you need assistance selecting your backup folders we put together <a href="@@helpbackup" target="_blank">this guide</a> for you.</p>
+
       <p>If you need to download and install Degoo again, simply click the button.</p>
 
-      @@include('downloadbutton.html', {"utm_campaign": "welcome-not_activated"})
-
-      <p><a href="@@helpbackup" target="_blank">Get help to backup</a></p>
+      @@include('downloadbutton.html', {"title": "Download Degoo", "utm_campaign": "welcome-not_activated"})
     </td>
   </tr>
 
