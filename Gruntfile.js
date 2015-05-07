@@ -40,6 +40,10 @@ module.exports = function(grunt) {
       }
     },
 
+    clean: {
+      main: ["tmp/*.html", "dist/*.html"]
+    },
+
     aws_s3: {
       options: {
         accessKeyId: '<%= aws.key %>',
@@ -71,8 +75,9 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-premailer');
   grunt.loadNpmTasks('grunt-aws-s3');
   grunt.loadNpmTasks('grunt-include-replace');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
-  grunt.registerTask('default', ['includereplace', 'premailer']);
+  grunt.registerTask('default', ['clean', 'includereplace', 'premailer']);
   grunt.registerTask('upload', ['aws_s3']);
 };
 
