@@ -4,5 +4,7 @@
     "download": "https://degoo.com/download",
     "invite": "https://degoo.com/me/invite",
     "helpbackup": "http://support.degoo.com/customer/portal/articles/1326476-how-to-backup-files",
-    "helpinstall": "http://support.degoo.com/customer/portal/articles/1326436-how-to-download-and-install-degoo"
+    "helpinstall": "http://support.degoo.com/customer/portal/articles/1326436-how-to-download-and-install-degoo",
+    "helpsecurity": "http://support.degoo.com/customer/portal/articles/1428478-how-safe-is-degoo-",
+    "helprestore": "http://support.degoo.com/customer/portal/articles/1472579-how-to-restore-backed-up-files"
 }
