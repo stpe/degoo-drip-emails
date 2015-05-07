@@ -1,0 +1,43 @@
+@@include('header.html')
+
+@@include('top-large.html')
+
+<!-- main -->
+<table width="600" cellpadding="30" cellspacing="0" border="0" align="center">
+  <!-- big top -->
+  <tr>
+    <td bgcolor="#FFFFFF" width="600" align="left" class="mainmsg">
+      @@include('headline.html', {"title": "5 tips to keep your files safe"})
+
+      <p>Did you know only one out of ten people backup their data daily? Congratulations, you are now one of those! Here are five important tips to ensure your files are safe.</p>
+
+      <ol class="list">
+        <li>
+          <b>Backup everything you are not happy loosing.</b><br>
+          <p>Make sure you have added the folders of everything important, documents, photos, things you work with or even spare time projects. Avoid things like applications and system files, but go the extra mile to include everything that is important to you.</p>
+        </li>
+        <li>
+          <b>Give it some time.</b><br>
+          <p>When starting there is typically a lot of data to be backed up, it may take days, even weeks, depending on much data you have. Make sure your computer is on and connected to the internet as much as possible during this phase. In case you have to disconnect, don't worry, Degoo will resume where it stopped once your computer is online again.</p>
+        </li>
+        <li>
+          <b>Backup your files - all the time.</b>
+          <p>You probably use your computer every day, creating or changing files. Ensure the Degoo client is starting automatically when you start your computer. Connect to the internet at least once a day to allow Degoo to backup your latest changes.</p>
+        </li>
+        <li>
+          <b>Be prepared.</b>
+          <p>In case something happens - be prepared! Open Degoo and click the Recovery tab. Without actually doing a recovery you can still verify what is there -  click the Start Recovery button and browse your backed up files. All there? Good - now you are prepared in case something happens.</p>
+        </li>
+        <li>
+          <b>Check your weekly status email</b><br>
+          <p>To make it easy for you to see that everything is in order, we will send you a summary email by the end of every week. It is critical you check this email to verify the date of the latest backup and how much you have backed up.</p>
+        </li>
+      </ol>
+
+      @@include('status.html')
+    </td>
+  </tr>
+
+</table>
+
+@@include('footer.html')
