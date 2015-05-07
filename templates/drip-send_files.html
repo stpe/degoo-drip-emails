@@ -1,0 +1,28 @@
+@@include('header.html')
+
+@@include('top-large.html')
+
+<!-- main -->
+<table width="600" cellpadding="30" cellspacing="0" border="0" align="center">
+  <!-- big top -->
+  <tr>
+    <td bgcolor="#FFFFFF" width="600" align="left" class="mainmsg">
+      @@include('headline.html', {"title": "Send large files to anyone"})
+
+      <p>As a Degoo user you can send very large files to anyone - they don't even need to have a Degoo account!</p>
+
+      <p>Simply go to the <a href="@@sendfiles" target="_blank">Send files</a> page and upload your file. Give the link to anyone you want to receive the file.</p>
+
+      @@include('button.html', {"title": "Send files", "url": "@@sendfiles", "utm_campaign": "sendfiles"})
+
+      <p>Files need to be less than 1 GB unless you are a <a href="@@upgrade" target="_blank">Degoo Premium</a> member, then you can send 100 GB sized files.</p>
+
+      <p>As a bonus, if the receiver signs up and starts using Degoo you both get 2 GB extra backup space!</p>
+
+      @@include('status.html')
+    </td>
+  </tr>
+
+</table>
+
+@@include('footer.html')
