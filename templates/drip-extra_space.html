@@ -1,0 +1,30 @@
+@@include('header.html')
+
+@@include('top-large.html')
+
+<!-- main -->
+<table width="600" cellpadding="30" cellspacing="0" border="0" align="center">
+  <!-- big top -->
+  <tr>
+    <td bgcolor="#FFFFFF" width="600" align="left">
+      @@include('headline.html', {"title": "How to increase backup space"})
+
+      @@include('subheadline.html', {"title": "Invite friends"})
+
+      <p>Help your friends stay as safe and secure as you do. Invite them to use Degoo and both you and your friend will get an extra 2 GB of backup space.</p>
+
+      @@include('button.html', {"title": "Get 500 GB free space now", "url": "@@invite"})
+
+      @@include('subheadline.html', {"title": "Upgrade account"})
+
+      <p>Get 1000 GB backup space immediately by upgrading to premium. Read more about the other benefits with a premium account.</p>
+
+      @@include('button.html', {"title": "Get premium now", "url": "@@upgrade"})
+    </td>
+  </tr>
+
+</table>
+
+@@include('quota-section.html')
+
+@@include('footer.html')
