@@ -10,9 +10,10 @@ module.exports = function(grunt) {
     premailer: {
       main: {
         options: {
-          verbose: true,
+          verbose: false,
           baseUrl: 'http://<%= aws.bucket %>/<%= aws.bucketdir %>',
-          removeComments: true
+          removeComments: true,
+          warnLevel: 'poor'
         },
         files: [{
             expand: true,
