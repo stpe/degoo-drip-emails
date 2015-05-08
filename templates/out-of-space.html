@@ -1,0 +1,22 @@
+@@include('header.html')
+
+@@include('top-large.html')
+
+<!-- main -->
+<table width="600" cellpadding="30" cellspacing="0" border="0" align="center">
+  <!-- big top -->
+  <tr>
+    <td bgcolor="#FFFFFF" width="600" align="left" class="mainmsg">
+      @@include('headline.html', {"title": "Action needed for your backup"})
+
+      <p>You are doing a great job keeping your files safe and secure! We just wanted to let you know you are running low on available backup space. You are currently using <span class="highlight">{{ ${UsedSpaceFormatted} }}</span> out of your total <span class="highlight">{{ ${QuotaSizeFormatted} }}</span>.</p>
+
+      <p>Upgrade your account now to get more backup space.</p>
+
+      @@include('button.html', {"title": "Upgrade now", "url": "@@upgrade", "utm_campaign": "premium"})
+    </td>
+  </tr>
+
+</table>
+
+@@include('footer.html')
