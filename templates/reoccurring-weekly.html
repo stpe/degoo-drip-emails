@@ -1,0 +1,26 @@
+@@include('header.html')
+
+@@include('top-large.html')
+
+<!-- main -->
+<table width="600" cellpadding="30" cellspacing="0" border="0" align="center">
+  <!-- big top -->
+  <tr>
+    <td bgcolor="#FFFFFF" width="600" align="left" class="mainmsg">
+      @@include('img-top.html', {"img": "bigcheck.png", "alt": "Great Success", "class": "bigcheck", "width": "168", "height": "170"})
+
+      @@include('headline.html', {"title": "Great Success"})
+
+      <p>We just wanted to let you know the status of your backup so you know if everything is in order. When this mail was sent your last backup was completed <span class="highlight">{{ ${LatestBackupDateFormatted} }}%</span>.</p>
+
+      @@include('img-meter.html')
+
+      <p>You are currently using <span class="highlight">{{ ${UsedSpaceFormatted} }}</span> out of your total <span class="highlight">{{ ${QuotaSizeFormatted} }}</span>.</p>
+    </td>
+  </tr>
+
+  @@include('section-invite.html')
+
+</table>
+
+@@include('footer.html')
