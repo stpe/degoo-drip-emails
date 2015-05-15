@@ -11,7 +11,7 @@ module.exports = function(grunt) {
       main: {
         options: {
           verbose: false,
-          baseUrl: 'http://<%= aws.bucket %>/<%= aws.bucketdir %>',
+          baseUrl: 'https://downloads.degoo.com/Images/Email/', // http://<%= aws.bucket %>/<%= aws.bucketdir %>',
           removeComments: true,
           warnLevel: 'poor'
         },
