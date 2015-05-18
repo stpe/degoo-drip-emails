@@ -6,7 +6,7 @@
               /* retina images */
               @media (min-resolution: 192dpi), (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
                   .meter {
-                      background-image: url(gfx/meter-{{ ${UsedSpacePercentage} }}@2x.png) !important;
+                      background-image: url(@@imageBaseUrlquota/quota-{{ ${UsedSpacePercentage} }}@2x.png) !important;
                       background-size: 149px 149px;
                       width: 149px !important;
                       height: 149px !important;
@@ -17,7 +17,7 @@
               }
             </style>
             <div class="meter">
-              <img src="gfx/quota/quota{{ ${UsedSpacePercentage} }}.png" width="149" height="149" alt="{{ ${UsedSpacePercentage} }}%">
+              <img src="@@imageBaseUrlquota/quota{{ ${UsedSpacePercentage} }}.gif" width="149" height="149" alt="{{ ${UsedSpacePercentage} }}%">
             </div>
           </td>
         </tr>

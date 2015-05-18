@@ -6,12 +6,13 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     aws: grunt.file.readJSON('grunt-aws.json'),
+    cfg: grunt.file.readJSON('config.json'),
 
     premailer: {
       main: {
         options: {
           verbose: false,
-          baseUrl: 'https://downloads.degoo.com/Images/Email/', // http://<%= aws.bucket %>/<%= aws.bucketdir %>',
+          baseUrl: '<%= cfg.imageBaseUrl %>', // http://<%= aws.bucket %>/<%= aws.bucketdir %>',
           removeComments: true,
           warnLevel: 'poor'
         },
